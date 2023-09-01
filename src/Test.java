@@ -7,15 +7,18 @@ public class Test
 
 	public static void main(String[] args)
 	{
-		int str = test("1aBbT346YM6op");
-		System.out.println(str);
+		test("hello","world");
+//		System.out.println(str);
+		
 	}
-	 public static int test(String str) { 
-		 int count=0;
-		 for(int i=0;i<str.length();i++) {
-			 if(Integer.valueOf(str.charAt(i)+"")>0 || Integer.valueOf(str.charAt(i)+"")<9)
-				 count++;
-		 }
-		 return count;
-	 }
+	 public static String test(String x,String y){ 
+		 x=x+y;//helloworld
+		 y=x.substring(0,x.length()-y.length());
+		 x=x.substring(y.length());
+		 System.out.println(x);
+		 System.out.println(y);
+		 System.out.println(y.codePointAt(0));
+		return null;
+	 }	
+	 
 } 

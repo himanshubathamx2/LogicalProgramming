@@ -9,7 +9,7 @@ public class SwappingPairsOfCharacters
 		
 		char[] ch=str.toCharArray();
 		char tmp=0;
-		
+		 
 		
 		for(int i=0;i<ch.length;i++)
 		{

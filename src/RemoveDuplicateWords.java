@@ -17,8 +17,6 @@ public class RemoveDuplicateWords {
 				}	
 			}
 			tmp=tmp+s[i]+" ";
-	
-			
 		}
 		System.out.println(tmp);
 		
