@@ -4,21 +4,28 @@ import java.util.List;
 
 public class Test
 {
-
 	public static void main(String[] args)
 	{
-		test("hello","world");
-//		System.out.println(str);
-		
+		boolean test = test(90);
+		System.out.println(test);
 	}
-	 public static String test(String x,String y){ 
-		 x=x+y;//helloworld
-		 y=x.substring(0,x.length()-y.length());
-		 x=x.substring(y.length());
-		 System.out.println(x);
-		 System.out.println(y);
-		 System.out.println(y.codePointAt(0));
-		return null;
+	 public static boolean test(int n){ 
+		int result=0;
+		result= cal(n);
+		while(result!=1) {
+			result=cal(result);
+		}
+		return true;
 	 }	
+	 
+	 public static int cal(int n) {
+			int sum=0,d=0;
+			 while(n>0) {
+				 d=n%10;
+				 n=n/10;
+				 sum=sum+ d*d;
+			 }
+		return sum;
+	 }
 	 
 } 
