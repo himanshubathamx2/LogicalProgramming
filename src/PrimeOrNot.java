@@ -3,27 +3,16 @@ public class PrimeOrNot {
 
 	public static void main(String[] args)
 	{
-		int n=5;
-		int i=1,count=0;
-		while(i<=n)
-		{
+		boolean prime = prime(12);
+		System.out.println(prime);
+	}
+	
+	public static boolean prime(int n) {
+		for(int i=2;i*i<=n;i++) {
 			if(n%i==0)
-			{
-				count++;
-			}
-			i++;
+				return false;
 		}
-		
-		if(count==2)
-		{
-			System.out.println("Prime");
-		}
-		else
-		{
-			System.out.println("Not a prime");
-		}
-		
-
+		return true;
 	}
 
 }
